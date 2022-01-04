@@ -61,5 +61,21 @@ public class RestaurantDAO implements DAO<Restaurant>{
 		}
 		return null;
 	}
+
+	@Override
+	public Restaurant add(Restaurant newObject) {
+		// TODO Auto-generated method stub
+		try(Connection conn = ConnectionFactory.getInstance().getConnection())
+		{
+			String query = "insert into restaurants (name) values (?)";
+			PreparedStatement pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, newObject.getName());
+			pstmt.execute();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
 	
 }

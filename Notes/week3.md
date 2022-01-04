@@ -7,3 +7,13 @@
 ## Components
 
 - Handler
+- Context
+- Javalin
+
+# Open API
+
+- (Docs)[https://javalin.io/plugins/openapi#dsl]
+
+# Jackson
+
+- Data binding stuff.

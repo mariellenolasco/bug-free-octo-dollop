@@ -5,4 +5,5 @@ import java.util.List;
 public interface DAO<T> {
 	T findById(Integer id);
 	List<T> getAll();
+	T add(T newObject);
 }

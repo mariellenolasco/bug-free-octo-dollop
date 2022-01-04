@@ -4,6 +4,7 @@ import com.revature.restaurantreviews.controllers.RestaurantController;
 import com.revature.restaurantreviews.dao.RestaurantDAO;
 
 import io.javalin.Javalin;
+import io.javalin.plugin.openapi.dsl.OpenApiBuilder;
 
 public class Router {
 	private static Router router = null;
@@ -22,7 +23,8 @@ public class Router {
 	
 	public void setUpEndpoints() {
 		RestaurantController restaurantController = new RestaurantController(new RestaurantDAO());
-		app.get("/restaurants", restaurantController.getRestaurants);
-		app.get("/restaurants/:id", restaurantController.getRestaurant);
+		app.get("/restaurants", OpenApiBuilder.documented(DocumentationFactory.getDoc("get restaurants"), restaurantController.getRestaurants));
+		app.get("/restaurants/{id}", OpenApiBuilder.documented(DocumentationFactory.getDoc("get restaurant"), restaurantController.getRestaurant));
+		app.post("/restaurants", OpenApiBuilder.documented(DocumentationFactory.getDoc("add restaurant"), restaurantController.addRestaurant));
 	}
 }
