@@ -20,7 +20,7 @@ public class HelloWorld {
   private static OpenApiOptions getOpenApiOptions() {
 	    Info applicationInfo = new Info()
 	        .version("1.0")
-	        .description("My Application");
+	        .description("Restaurant Reviews API");
 	    return new OpenApiOptions(applicationInfo).path("/swagger-docs").swagger(new SwaggerOptions("/swagger").title("Restaurant Review Swagger Documentation"));
 	}
 }
