@@ -14,4 +14,4 @@
 - DAO
 - Driver Manager
 - Connection
-- Statement vs Prepared Statement
+- (Statement vs Prepared Statement)[https://www.baeldung.com/java-statement-preparedstatement]
