@@ -7,6 +7,11 @@ import com.revature.restaurantreviews.models.Restaurant;
 
 import io.javalin.http.Handler;
 
+/**
+ * Controller for the requests regarding restaurant resources
+ * @author MarielleNolasco
+ *
+ */
 public class RestaurantController {
 	private DAO<Restaurant> restaurantDAO;
 	public RestaurantController(DAO<Restaurant> restaurantDAO)

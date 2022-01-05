@@ -6,6 +6,11 @@ import com.revature.restaurantreviews.dao.RestaurantDAO;
 import io.javalin.Javalin;
 import io.javalin.plugin.openapi.dsl.OpenApiBuilder;
 
+/**
+ * Singleton used in mapping endpoints to controller handlers
+ * @author MarielleNolasco
+ *
+ */
 public class Router {
 	private static Router router = null;
 	private static Javalin app;
@@ -13,6 +18,7 @@ public class Router {
 	{
 		app = _app;
 	}
+	
 	public static Router getInstance(Javalin app) {
 		if(router == null)
 		{
@@ -21,6 +27,9 @@ public class Router {
 		return router;
 	}
 	
+	/**
+	 * Method for mapping the endpoints to controller handlers
+	 */
 	public void setUpEndpoints() {
 		RestaurantController restaurantController = new RestaurantController(new RestaurantDAO());
 		app.get("/restaurants", OpenApiBuilder.documented(DocumentationFactory.getDoc("get restaurants"), restaurantController.getRestaurants));

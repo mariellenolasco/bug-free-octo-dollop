@@ -7,7 +7,9 @@
 ## Components
 
 - Handler
+  - (Documentation)[https://javalin.io/documentation#handlers]
 - Context
+  - (Documentation)[https://javalin.io/documentation#context]
 - Javalin
 
 # Open API

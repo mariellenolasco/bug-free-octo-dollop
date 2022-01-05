@@ -5,6 +5,11 @@ import com.revature.restaurantreviews.models.Restaurant;
 import io.javalin.plugin.openapi.dsl.OpenApiBuilder;
 import io.javalin.plugin.openapi.dsl.OpenApiDocumentation;
 
+/**
+ * Factory used for generating documentation for API in swagger
+ * @author MarielleNolasco
+ *
+ */
 class DocumentationFactory {
 	static OpenApiDocumentation getDoc(String handler)
 	{
