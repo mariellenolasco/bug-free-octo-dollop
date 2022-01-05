@@ -22,6 +22,15 @@ class DocumentationFactory {
 				return OpenApiBuilder.document()
 						.operation(op -> {op.addTagsItem("Restaurant");})
 						.body(Restaurant.class)
+						.result("201");
+			case "delete restaurant":
+				return OpenApiBuilder.document()
+						.operation(op -> {op.addTagsItem("Restaurant");})
+						.result("204");
+			case "update restaurant":
+				return OpenApiBuilder.document()
+						.operation(op -> {op.addTagsItem("Restaurant");})
+						.body(Restaurant.class)
 						.result("204");
 			default: return null;
 		}

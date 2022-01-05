@@ -24,6 +24,15 @@ public class RestaurantController {
 	
 	public Handler addRestaurant = ctx -> {
 		restaurantDAO.add(ctx.bodyAsClass(Restaurant.class));
+		ctx.res.setStatus(201);
+	};
+	
+	public Handler deleteRestaurant = ctx -> {
+		restaurantDAO.delete(Integer.parseInt(Objects.requireNonNull(ctx.pathParam("id"))));
+		ctx.res.setStatus(204);
+	};
+	public Handler updateRestaurant = ctx -> {
+		restaurantDAO.update(ctx.bodyAsClass(Restaurant.class));
 		ctx.res.setStatus(204);
 	};
 }

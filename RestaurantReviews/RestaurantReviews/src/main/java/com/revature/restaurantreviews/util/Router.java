@@ -26,5 +26,7 @@ public class Router {
 		app.get("/restaurants", OpenApiBuilder.documented(DocumentationFactory.getDoc("get restaurants"), restaurantController.getRestaurants));
 		app.get("/restaurants/{id}", OpenApiBuilder.documented(DocumentationFactory.getDoc("get restaurant"), restaurantController.getRestaurant));
 		app.post("/restaurants", OpenApiBuilder.documented(DocumentationFactory.getDoc("add restaurant"), restaurantController.addRestaurant));
+		app.delete("/restaurants/{id}", OpenApiBuilder.documented(DocumentationFactory.getDoc("delete restaurant"), restaurantController.deleteRestaurant));
+		app.put("/restaurants/{id}", OpenApiBuilder.documented(DocumentationFactory.getDoc("update restaurant"), restaurantController.updateRestaurant));
 	}
 }

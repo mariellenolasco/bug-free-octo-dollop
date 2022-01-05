@@ -77,5 +77,37 @@ public class RestaurantDAO implements DAO<Restaurant>{
 		}
 		return null;
 	}
-	
+
+	@Override
+	public void delete(Integer id) {
+		// TODO Auto-generated method stub
+		try(Connection conn = ConnectionFactory.getInstance().getConnection())
+		{
+			String query = "delete from restaurants where id = ?";
+			PreparedStatement pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, id);
+			pstmt.execute();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	public void update(Restaurant updatedObject) {
+		// TODO Auto-generated method stub
+		try(Connection conn = ConnectionFactory.getInstance().getConnection())
+		{
+			String query = "update restaurants set name =? where id=?";
+			PreparedStatement pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, updatedObject.getName());
+			pstmt.setInt(2, updatedObject.getId());
+			pstmt.execute();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 }
