@@ -15,3 +15,8 @@
 - Driver Manager
 - Connection
 - (Statement vs Prepared Statement)[https://www.baeldung.com/java-statement-preparedstatement]
+
+## Thinking thoughts
+
+- Theoretically speaking you can make JDBC code first using Statements. Because you can execute DDL commands with Statements.
+- Prepared statement performs faster, built on top of statement interface
