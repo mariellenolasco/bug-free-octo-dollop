@@ -52,3 +52,59 @@ Locally speaking, a repository is nothing more than a special folder that you ke
 **Github desktop** is a tool that allows you to manage your git repositories. It has features that integrate with github allowing you to easily clone remote repositories as well as drag and drop functionality for your local ones. Go get yourself a copy here: [Github Desktop](https://desktop.github.com/)
 
 ---
+
+### Cloning a repository
+
+1. Go to github
+2. Navigate to the repository you want to clone
+3. Click on the green `code` dropdown menu
+4. Select `open with github desktop`
+5. If you've successfully installed github desktop, it should open the application for you. If you haven't, please download and install it to access this feature.
+6. When you've opened the github desktop application, it asks you where you want to save your cloned repository in the local path section. If you click on the browse button, you can easily choose a saving place using your file explorer. I suggest you pick a place that's easy to remember, like your desktop or a special folder for your work stuff.
+7. Click the clone button when you're finished. Congratulations! You've successfully cloned a remote repository.
+
+**Q**: What can I do with a cloned repository?
+
+**A**: That repository is connected to a remote online repository somewhere on the interwebs. When you make changes to that repository, you can upload those changes online so you can access them from whatever machine. This feature also allows multiple people to collaborate on a single project and see the changes made by each team member.
+
+## Saving changes
+
+**Q**: How do I make git save the changes that I'm making?
+
+**A**: It's a two step process if you're saving locally, 3 if you wanna upload your changes up on the interwebs
+
+### `git add`
+
+`git add` is a cmd you make on the command line to specify which files you want git to save the states of. You run `git add <file-name>` in your repo folder to add a certain file to the group of files you want to commit.
+
+Using github desktop, this cmd is abstracted away from you with the use of the checkboxes beside the files you want to include in your commit.
+
+### `git commit`
+
+`git commit` is a cmd you write on the command line to bookmark the state/ take a snapshot of the current state of all edited files that are in staging.
+
+**Q**: What is staging????
+
+**A**: When you run `git add` you actually add files to staging. Staging is where you gather all the updated files you want to include in a commit.
+
+**Q**: Why stage files???
+
+**A**: So you can manage which files are committed together! You want to group together files that make logical sense. You want to think about your commit history as a story. You want to group files that contribute chapters to that story. Another analogy would be to think of your commit history as your game history and every commit is a checkpoint in your game. You want to have a checkpoint everytime you accomplish something big or you arrive at unfamiliar territory.
+
+**Q**: What's a commit history?
+
+**A**: A commit history is a list of your previous commits. When you rollback to a certain commit, you restore the files to the state they were in at the time of the commit. By implementing good commit practices, your commit history could be the saving grace to a feature development that has gone really bad.
+
+---
+
+In github desktop, to commit to your local repo, you can just write out your commit message in the summary section on the left of your github desktop app.
+
+---
+
+**Q**: What's a commit message?
+
+**A**: A commit message is a message you attach to a commit to document what changes are being brought about by the commit. Practice writing out succint descriptions of your commits, it would be helpful if you ever need to rollback or begin working in a team environment.
+
+### `git push`
+
+`git push` is a cmd you write out to the console to upload files to a remote repo.

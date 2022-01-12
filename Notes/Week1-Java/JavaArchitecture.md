@@ -2,7 +2,9 @@
 
 - Java is an _Object Oriented Programming Language_, that is used to create sotware that runs on multiple platforms. It's _high level_, _strongly typed_, and _platform independent._
 
-## Vocabulary Terms
+---
+
+### Vocabulary Terms
 
 - **Object Oriented Programming**
   - Object oriented programming is a programming paradigm that focuses on the "objects" and relationships between them rather than step by step process the program has to take in order to execute successfully. This came about because it's difficult to maintain and develop programs that follow a linear when most processes in real life doesn't work like that.
@@ -15,6 +17,8 @@
   - [Article on Typing](https://medium.com/android-news/magic-lies-here-statically-typed-vs-dynamically-typed-languages-d151c7f95e2b)
 - **Platform Indepedent**
   - The way you design your program is not dependent on the system you'll be running it on.
+
+---
 
 ## WORA
 
@@ -42,14 +46,16 @@ Stands for the **Java Virtual Machine** which allows java programs to run on any
 
 [Intro to the JVM](https://www.infoworld.com/article/3272244/what-is-the-jvm-introducing-the-java-virtual-machine.html)
 
-## Vocab terms
+---
+
+### Vocab terms
 
 - **Compiler**
   - A computer program that translates computer code written in one programming language into another. The term is primarily used for programs that translate high level programming language to a lower level language to create an executable program.
   - [Wiki entry on compilers](https://en.wikipedia.org/wiki/Compiler)
 - **Bytecode**
   - Compact numeric codes, constants, and references that is designed for efficient execution by a software interpreter. In the context of java, java bytecode is a set of instructions that would be taken in by the JVM to interpret to OS specific instructions for the CPU to execute. Closer to machine code that human syntax, it's designed for ease of interpretation to make your code more portable.
-  - [Wiki entry on compilers](https://en.wikipedia.org/wiki/Bytecode)
+  - [Wiki entry on bytecode](https://en.wikipedia.org/wiki/Bytecode)
 - **Machine Code**
   - Any low level programming language consisting of instructions which are used to control a computer's CPU (the part of your machine that executes code and makes magic happen).
   - Strictly numerical and is designed to run as fast as possible. "Close to the metal" syntax.
@@ -64,3 +70,5 @@ Stands for the **Java Virtual Machine** which allows java programs to run on any
 - **IDE**
   - Stands for Integrated Developing Environment. This is software that contains tools that helps developers focus on code development. Some common features available are: intellisense, debugger and a source code editor that highlights keywords for you. Spring tool suite is a great example for this.
   - [Some article on IDEs](https://www.redhat.com/en/topics/middleware/what-is-ide)
+
+---
