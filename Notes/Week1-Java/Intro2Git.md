@@ -15,6 +15,12 @@ Git is a distributed version control system designed to help manage your coding 
 
 ---
 
+### Tools of the trade
+
+To get started with git, get git in your system by installing it in your machine. Use this link to dowload: [Download git](https://git-scm.com/downloads).
+
+---
+
 ## Repository
 
 This is where your coding project is stored. There are two kinds:
@@ -97,7 +103,7 @@ Using github desktop, this cmd is abstracted away from you with the use of the c
 
 ---
 
-In github desktop, to commit to your local repo, you can just write out your commit message in the summary section on the left of your github desktop app.
+In github desktop, to commit to your local repo, you can just write out your commit message in the summary section on the left of your github desktop app. And click on the commit to main button below the text area.
 
 ---
 
@@ -108,3 +114,36 @@ In github desktop, to commit to your local repo, you can just write out your com
 ### `git push`
 
 `git push` is a cmd you write out to the console to upload files to a remote repo.
+
+To push using github desktop, click on the push to origin button at the top ribbon on the screen.
+
+### Big Picture
+
+In summary, to save changes you've made to files:
+
+1. `git add` files to staging. In github desktop, click on the checkboxes beside the files you want to include to the commit.
+2. `git commit` the files in staging. In github desktop, fill out the summary section to include your commit message and click on the commit to main button.
+3. `git push` the latest commits up to github. In github desktop, just press on the push to origin button at the top ribbon.
+
+## Pulling some changes
+
+`git pull` is a cmd you run to get the latest changes from a remote repository. It's a combination of two commands, `git fetch` and `git merge`. `git fetch` tries to match the commit history of the remote repo with the local repo. `git merge` would merge the changes from the remote repo to the local repo.
+
+In github desktop, you would click the button to fetch any changes from origin, and if there are any, you can press the same button to pull from origin.
+
+## gitignore
+
+A .gitignore file lists out all the files and folders you wouldn't want git to be tracking.
+
+**Q**: Why do you want to ignore files?
+
+**A**: Some files, like your .class files and other build outputs are useless in a remote repo setting. You want only source code and other important documents that are supplementary to the code to make it. Furthermore, some files that contain certain sensitive information like database credentials are also best left in your local machine.
+
+## Best Practices
+
+1. **Don't be afraid of commitment!**
+   - Commmit often and bookmark the changes you've made to your code with self documenting commit messages. An immaculate commit history will save you a lot of time if you want to rollback and help prep you for working in a group.
+2. **Push and pull often**
+   - Especially true when working in a group, don't forget to pull the latest updates from the remote repo you are tracking and to push the work you've done by the end of the day.
+3. **Don't forget your .gitignore**
+   - Don't forget to include your gitignore as one of your first commits!
