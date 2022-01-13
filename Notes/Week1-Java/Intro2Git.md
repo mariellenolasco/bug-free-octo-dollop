@@ -155,3 +155,11 @@ To get a nice premade template for you gitignore file, go to [gitignore.io](http
    - Especially true when working in a group, don't forget to pull the latest updates from the remote repo you are tracking and to push the work you've done by the end of the day.
 3. **Don't forget your .gitignore**
    - Don't forget to include your gitignore as one of your first commits!
+
+---
+
+**_Songs of the trade_**
+
+The perfect playlist for learning git:
+
+## <iframe src="https://open.spotify.com/embed/playlist/0MJBni0UzdnML1amikx0Rc?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>

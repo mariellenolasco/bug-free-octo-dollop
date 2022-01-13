@@ -50,7 +50,17 @@ We can't just keep declaring variables and call that a program. For one thing, t
 
 ### If Statement
 
-The if statement is the most intuitive to understand. Much like how you would present options to someone, you structure an if statement the same way. An if statement checks if a boolean expression is true.
+The if statement is the most intuitive to understand. Much like how you would present options to someone, you structure an if statement the same way. An if statement checks if a boolean expression is true then executes the underlying code block.
+
+---
+
+### Vocab terms
+
+- **Boolean Expression**
+  - A boolean expression is a statement that can be either true or false. For example, x == 0.
+  - You usually find logical operators
+
+---
 
 ### Switch Statement
 
