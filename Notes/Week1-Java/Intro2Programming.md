@@ -30,20 +30,6 @@ There are certain data types called primitives that don't need the new key word 
 
 Programming with Java, you work with 2 kinds of memory spaces, **stack and heap**. _Heap_ is where more complex data types such as objects are stored, while the _stack_ contains methods calls and primitive variables.
 
----
-
-### Memory Management
-
-One conundrum developers used to lose a lot of hair on was memory allocation for all the variables they would create. What if with all the variables we're creating we lose memory space????? With modern computer architecture that is now a thing of the past. Furthemore, high level languages such as Java and C# has automatic memory management.
-
-The runtime environment provides services for memory management more commonly known as garbage collection. There exists this entity called the garbage collector, that periodically checks memory to see if there are any objects that are no longer being used (for example, they are out of scope or no longer being referenced and is therefore unreachable). The garbage collector disposes of these objects to free up memory. It automatically deallocates memory for useless objects.
-
-You can't really tell the garbage collector when to run but you can suggest a collection using the method, _System.gc()_.
-
-Another notable method involved with garbage collection is an object's _finalize()_ method. This is the method your garbage collector calls before destroying the object. The garbage collector calls on this method for any clean up activity such as closing resources associated with that object such as a database connection. This method is called for basically resource deallocation.
-
----
-
 ## Control Flow
 
 We can't just keep declaring variables and call that a program. For one thing, that would be very boring, for another, it would also be kinda useless. Thus, we have control flow statements. We use these statements to add decisioning logic in our code.
