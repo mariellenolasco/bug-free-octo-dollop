@@ -82,3 +82,23 @@ The runtime environment provides services for memory management more commonly kn
 You can't really tell the garbage collector when to run but you can suggest a collection using the method, _System.gc()_.
 
 Another notable method involved with garbage collection is an object's _finalize()_ method. This is the method your garbage collector calls before destroying the object. The garbage collector calls on this method for any clean up activity such as closing resources associated with that object such as a database connection. This method is called for basically resource deallocation.
+
+For more information, read up on GC in this wonderful [article](https://www.geeksforgeeks.org/garbage-collection-java/).
+
+---
+
+### Vocab Terms
+
+- **Memory allocation**
+  - When you take some computer memory space to store your data
+- **Memory deallocation**
+  - When you release the computer memory space so the computer can reuse it to store some other data
+- **Garbage Collector**
+  - A method called by the JVM to run automatic memory management.
+  - [Article on GC](https://hiberstack.com/garbage-collection-and-finalize-method/)
+- **Stack & Heap**
+  - _Stack_ is the space in memory for storing method calls and local variables.
+  - _Heap_ is the space in memory used for storing objects used in the program.
+  - [More on stack vs heap](https://www.tutorialspoint.com/difference-between-stack-and-heap-memory-in-java)
+
+---
