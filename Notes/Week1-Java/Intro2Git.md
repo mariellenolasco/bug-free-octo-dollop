@@ -139,6 +139,14 @@ A .gitignore file lists out all the files and folders you wouldn't want git to b
 
 **A**: Some files, like your .class files and other build outputs are useless in a remote repo setting. You want only source code and other important documents that are supplementary to the code to make it. Furthermore, some files that contain certain sensitive information like database credentials are also best left in your local machine.
 
+---
+
+**Tools of the trade**
+
+To get a nice premade template for you gitignore file, go to [gitignore.io](https://www.toptal.com/developers/gitignore) and input in the tech and IDEs you're working with, amd just copy & paste the result in your .gitignore file.
+
+---
+
 ## Best Practices
 
 1. **Don't be afraid of commitment!**
