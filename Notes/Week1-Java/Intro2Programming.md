@@ -97,4 +97,81 @@ Note that you can have more than one else if block
 
 ### Switch Statement
 
+A lot of newly minted programmers are a little intimidated by the switch statement. Mostly because no one can really remember the correct syntax for this block. However, switch statements perform better than if else if block especially for when you're really only interested in the value of a single variable, like say, the user's input.
+
+A switch statement is made up 2 things, the variable whose value you're interested in, and the code blocks you wanna execute depending on its value separated by cases.
+
+```java
+switch (variableOfInterest) {
+case potentialValue0:
+    //Execute code;
+    break;
+    //So it doesn't fall through
+case potentialValue1:
+    //Execut more code;
+    break;
+default:
+    //if the value of the variable doesn't match any of the cases, run this
+    break;
+}
+```
+
 ## Iteration
+
+Sometimes you wanna execute something over and over again. Take for example eating, you gotta chew your food couple times before you can swallow, otherwise you'll end up choking and that's not really a fun time. Same with code. Sometimes you wanna ask an end user again for their input because the first input was invalid.
+
+### While
+
+While loops check an initial boolean condition before executing the code block. It keeps executing the code block until the boolean condition renders false.
+
+```java
+while(someCondition) {
+    //execute this code
+}
+```
+
+### Do while
+
+Executes the code block at least once, before checking the boolean condition to re-execute the code block.
+
+```java
+do {
+
+} while (someCondition);
+```
+
+### For
+
+Has three parts: initialization, condition, and update. The initialization sets the delimiter of your loop. Condition is the statement that determines whether the loop terminates or continues, usually involves the delimiter. Update is the statement that determines how the delimiter changes in value after each iteration.
+
+```java
+for(int i = 0; i < 10; i++) {
+    // i is your delimiter
+    // i < 10 is your condition
+    // i++ is the update statement
+    // The loop starts and i is equal to 0, it checks if i is less than 10, if this is true, the code is executed and the value of i is incremented at the end of the loop
+}
+```
+
+The for loop above can be reconstructed using a while loop like the one below
+
+```java
+int i = 0;
+while (i < 10) {
+    //Execute some code
+    i++;
+}
+```
+
+### Foreach
+
+Also known as the "enhanced for loop" this is used especially for iterating through a collection like an array of objects. Syntax still uses the for keyword however, instead of a three part condition, the condition consists of a temporary variable to hold each element of the collection and a reference to the collection being iterated over.
+
+```java
+for(someDataType temp: tempCollection)
+{
+    //execute code
+}
+```
+
+For more information, refer to this [article](https://www.geeksforgeeks.org/for-each-loop-in-java/)
